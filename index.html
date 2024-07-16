@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <nav
       class="d-flex justify-content-between align-items-center"
@@ -95,14 +96,14 @@
       <!-- offcanvas -->
       <div class="d-flex d-lg-none m-0 p-0">
         <button
-          class="btn btn-primary"
+          class="btn"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#nav_btn">
-          Open
+          <span class="fluent--navigation-16-filled"></span>
         </button>
       </div>
-      <div class="offcanvas offcanvas-end" id="nav_btn">
+      <div class="offcanvas offcanvas-end" id="nav_btn" style="width: 15rem">
         <div class="offcanvas-header">
           <h3 class="offcanvas-title">Orthopedic</h3>
           <button
@@ -119,8 +120,8 @@
             data-bs-target="#demo1">
             About
           </a>
-          <ul class="collapse m-0" id="demo1">
-            <li class="">
+          <ul class="collapse m-0" id="demo1" style="list-style: none">
+            <li class="pb-2">
               <a href="#" class="text-decoration-none">Supplier</a>
             </li>
             <li>
@@ -142,8 +143,10 @@
             data-bs-target="#demo2">
             Providers
           </a>
-          <ul class="collapse m-0" id="demo2">
-            <li><a href="#" class="text-decoration-none">Supplier</a></li>
+          <ul class="collapse m-0" id="demo2" style="list-style: none">
+            <li class="pb-2">
+              <a href="#" class="text-decoration-none">Supplier</a>
+            </li>
             <li>
               <a href="#" class="text-decoration-none">Pharamaceutical</a>
             </li>
@@ -159,8 +162,10 @@
             data-bs-target="#demo3">
             More
           </a>
-          <ul class="collapse m-0" id="demo3">
-            <li><a href="#" class="text-decoration-none">Supplier</a></li>
+          <ul class="collapse m-0" id="demo3" style="list-style: none">
+            <li class="pb-2">
+              <a href="#" class="text-decoration-none">Supplier</a>
+            </li>
             <li>
               <a href="#" class="text-decoration-none">Pharamaceutical</a>
             </li>
@@ -173,9 +178,7 @@
             >Login</a
           >
 
-          <a href="#" class="p-2 ms-2 m-0 text-white text-decoration-none"
-            >Signup</a
-          >
+          <a href="#" class="p-2 m-0 link-dark text-decoration-none">Signup</a>
         </div>
       </div>
     </nav>
@@ -202,22 +205,28 @@
           </div>
           <div class="col-12 d-flex justify-content-start text-white">
             <div class="row m-0 p-0">
-              <a href="#" class="col body-sl-img"><p class="mb-1">Hip</p></a>
-              <a href="#" class="col body-sl-img"><p class="mb-1">Knee</p></a>
-              <a href="#" class="col body-sl-img"
-                ><p class="mb-1">Shoulder</p></a
-              >
+              <a href="#" class="col body-sl-img">
+                <p class="mb-1">Hip</p>
+              </a>
+              <a href="#" class="col body-sl-img">
+                <p class="mb-1">Knee</p>
+              </a>
+              <a href="#" class="col body-sl-img">
+                <p class="mb-1">Shoulder</p>
+              </a>
             </div>
           </div>
           <div class="col-12 d-flex justify-content-start text-white">
             <div class="row m-0 p-0">
-              <a href="#" class="col body-sl-img"
-                ><p class="mb-1">Hand & Wrist</p></a
-              >
-              <a href="#" class="col body-sl-img"
-                ><p class="mb-1">Foot & Ankle</p></a
-              >
-              <a href="#" class="col body-sl-img"><p class="mb-1">Spine</p></a>
+              <a href="#" class="col body-sl-img">
+                <p class="mb-1">Hand & Wrist</p>
+              </a>
+              <a href="#" class="col body-sl-img">
+                <p class="mb-1">Foot & Ankle</p>
+              </a>
+              <a href="#" class="col body-sl-img">
+                <p class="mb-1">Spine</p>
+              </a>
             </div>
           </div>
           <div
@@ -325,7 +334,10 @@
       style="border-bottom: 2px solid rgba(184, 184, 184, 0.288)"></div>
     <!-- flow-chart -->
     <div class="mt-2">
-      <img class="w-100 m-0 p-0" />
+      <img
+        src="./assets/images/flow-top.png"
+        alt="flow top"
+        class="w-100 m-0 p-0" />
     </div>
     <div
       class="row align-items-center w-100 m-0"
@@ -459,11 +471,13 @@
       class="doc_img row d-flex justify-content-evenly py-5 m-0 flex-nowrap w-100"
       style="overflow-x: scroll">
       <div class="p-3 col-12 col-md-5 col-lg-3 m-0">
-        <div class="card p-0">
+        <div
+          class="card p-0 m-0 border-0 rounded-top"
+          style="box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.329)">
           <img
             src="./assets/images/doctor1.jfif"
             alt="doc1"
-            class="img-fluid p-0"
+            class="img-fluid p-0 rounded-top"
             style="overflow: hidden" />
           <div class="card-body">
             <h6 style="color: #002b58">Dr. Wiley Waites</h6>
@@ -472,11 +486,13 @@
         </div>
       </div>
       <div class="p-3 col-12 col-md-5 col-lg-3 m-0">
-        <div class="card p-0 m-0">
+        <div
+          class="card p-0 m-0 border-0 rounded-top"
+          style="box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.329)">
           <img
             src="./assets/images/doctor2.jfif"
             alt="doc1"
-            class="img-fluid p-0"
+            class="img-fluid p-0 rounded-top"
             style="overflow: hidden" />
           <div class="card-body">
             <h6 style="color: #002b58">Dr. John Dory</h6>
@@ -485,11 +501,13 @@
         </div>
       </div>
       <div class="p-3 col-12 col-md-5 col-lg-3 m-0">
-        <div class="card p-0 m-0">
+        <div
+          class="card p-0 m-0 border-0 rounded-top"
+          style="box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.329)">
           <img
             src="./assets/images/doctor3.jfif"
             alt="doc1"
-            class="img-fluid p-0"
+            class="img-fluid p-0 rounded-top"
             style="overflow: hidden" />
           <div class="card-body">
             <h6 style="color: #002b58">Dr. Patty O'Furniture</h6>
