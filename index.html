@@ -14,12 +14,14 @@
       <!-- Image -->
       <div>
         <img
-          class="img-fluid float-start"
+          class="img-fluid float-start ms-2 my-2"
           src="assets/images/ortho_logo.png"
           alt="logo" />
       </div>
+
       <!-- navigation -->
-      <div class="d-flex fw-bold me-2">
+
+      <div class="d-none d-lg-flex fw-bold me-2">
         <ul class="nav justify-content-end">
           <li class="nav-item">
             <a href="#" class="p-2 m-0 link-dark text-decoration-none">Home</a>
@@ -83,26 +85,110 @@
           <li class="nav-item">
             <a
               href="#"
-              class="p-2 m-0 text-white rounded-5 text-decoration-none"
+              class="p-2 ms-2 m-0 text-white rounded-5 text-decoration-none"
               style="background-color: #d27203"
               >Signup</a
             >
           </li>
         </ul>
       </div>
+      <!-- offcanvas -->
+      <div class="d-flex d-lg-none m-0 p-0">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#nav_btn">
+          Open
+        </button>
+      </div>
+      <div class="offcanvas offcanvas-end" id="nav_btn">
+        <div class="offcanvas-header">
+          <h3 class="offcanvas-title">Orthopedic</h3>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+          <a href="#" class="p-2 m-0 link-dark text-decoration-none">Home</a>
+
+          <a
+            class="dropdown-toggle p-2 m-0 link-dark text-decoration-none"
+            data-bs-toggle="collapse"
+            data-bs-target="#demo1">
+            About
+          </a>
+          <ul class="collapse m-0" id="demo1">
+            <li class="">
+              <a href="#" class="text-decoration-none">Supplier</a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none">Pharamaceutical</a>
+            </li>
+          </ul>
+
+          <a href="#" class="p-2 m-0 link-dark text-decoration-none"
+            >Evaluation</a
+          >
+
+          <a href="#" class="p-2 m-0 link-dark text-decoration-none"
+            >Education</a
+          >
+
+          <a
+            class="dropdown-toggle p-2 m-0 link-dark text-decoration-none"
+            data-bs-toggle="collapse"
+            data-bs-target="#demo2">
+            Providers
+          </a>
+          <ul class="collapse m-0" id="demo2">
+            <li><a href="#" class="text-decoration-none">Supplier</a></li>
+            <li>
+              <a href="#" class="text-decoration-none">Pharamaceutical</a>
+            </li>
+          </ul>
+
+          <a href="#" class="p-2 m-0 link-dark text-decoration-none"
+            >Exercise</a
+          >
+
+          <a
+            class="dropdown-toggle p-2 m-0 link-dark text-decoration-none"
+            data-bs-toggle="collapse"
+            data-bs-target="#demo3">
+            More
+          </a>
+          <ul class="collapse m-0" id="demo3">
+            <li><a href="#" class="text-decoration-none">Supplier</a></li>
+            <li>
+              <a href="#" class="text-decoration-none">Pharamaceutical</a>
+            </li>
+          </ul>
+
+          <a
+            href="#"
+            class="p-2 m-0 text-decoration-none"
+            style="color: #205483"
+            >Login</a
+          >
+
+          <a href="#" class="p-2 ms-2 m-0 text-white text-decoration-none"
+            >Signup</a
+          >
+        </div>
+      </div>
     </nav>
     <!-- body -->
-    <div class="">
-      <p
-        class="fs-4 d-flex justify-content-center pt-4 pb-3 text-white m-0 text-wrap"
-        style="background-color: #002b58">
-        Simplifying &nbsp;
-        <span class="gradient-text fw-bold text-wrap">YOUR&nbsp;</span>
-        Orthopedic Care &nbsp;
-        <span class="gradient-text fw-bold text-wrap"
-          >EVALUATE, EDUCATE & ENGAGE
-        </span>
-      </p>
+    <div
+      class="fs-4 d-flex justify-content-center text-white m-0 w-100 pt-4 pb-2 flex-wrap"
+      style="background-color: #002b58">
+      <p class="">Simplifying &nbsp;</p>
+      <span class="gradient-text fw-bold">YOUR&nbsp;</span>
+      <p>Orthopedic Care &nbsp;</p>
+      <span class="gradient-text fw-bold">EVALUATE, &nbsp;</span>
+      <span class="gradient-text fw-bold"> EDUCATE & &nbsp;</span>
+      <span class="gradient-text fw-bold"> ENGAGE</span>
     </div>
     <!-- image -->
     <div class="row p-0 m-0 body-img justify-content-center">
@@ -137,7 +223,7 @@
           <div
             class="col-12 col-sm-8 col-md-7 col-lg-6 justify-content-start my-5 ps-3">
             <div
-              class="row m-0 p-0 rounded-5 align-items-center"
+              class="row m-0 p-0 rounded-5 d-flex align-items-center justify-content-between"
               style="
                 background-color: #002b58;
                 border: 2px solid green;
@@ -145,7 +231,7 @@
               ">
               <input
                 type="text"
-                class="col-10 rounded-5 p-1 p-md-2 m-0 text-white"
+                class="col-10 rounded-5 p-2 p-md-2 m-0 text-white"
                 value="Search your Orthopedic condition to learn more"
                 style="
                   border: none;
@@ -154,7 +240,7 @@
                   font-size: 1rem;
                 "
                 disabled />
-              <i class="col-1 material-symbols--search p-2"></i>
+              <i class="col-1 material-symbols--search p-2 me-2"></i>
             </div>
           </div>
         </div>
@@ -185,14 +271,14 @@
         <img
           src="./assets/images/knee.jpg"
           alt="Knee_image"
-          class="rounded-5 m-0 h-100" />
+          class="rounded-5 m-0" />
       </div>
     </div>
     <!-- Evaluation education provider -->
     <div class="row d-flex justify-content-center m-0 py-5">
       <!-- Image-1 -->
       <div
-        class="col-6 col-md-4 eva-img rounded d-flex align-items-end"
+        class="col-10 col-md-3 col-lg-4 eva-img rounded d-flex align-items-end"
         style="border: none">
         <div class="row text-white d-flex">
           <h5 class="col-12">Evaluation</h5>
@@ -206,7 +292,7 @@
       </div>
       <!-- Image-2 -->
       <div
-        class="col-6 col-md-4 col-lg-4 edu-img rounded d-flex align-items-end"
+        class="col-10 col-md-3 col-lg-4 edu-img rounded d-flex align-items-end"
         style="border: none">
         <div class="row text-white d-flex">
           <h5 class="col-12">Education</h5>
@@ -220,7 +306,7 @@
       </div>
       <!-- Image-3 -->
       <div
-        class="col-6 col-md-4 col-lg-4 pro-img rounded d-flex align-items-end"
+        class="col-10 col-md-3 col-lg-4 pro-img rounded d-flex align-items-end"
         style="border: none">
         <div class="row text-white d-flex">
           <h5 class="col-12">Provider</h5>
@@ -239,10 +325,10 @@
       style="border-bottom: 2px solid rgba(184, 184, 184, 0.288)"></div>
     <!-- flow-chart -->
     <div class="mt-2">
-      <img src="./assets/images/flow-top.png" alt="flow-top" class="w-100" />
+      <img class="w-100 m-0 p-0" />
     </div>
     <div
-      class="row align-items-center w-100"
+      class="row align-items-center w-100 m-0"
       style="background-color: #46b0ba; color: white; padding: 2rem">
       <h4 class="col-12 col-md-8">
         Register here to join the My Orthopedic Problem community of Patients,
@@ -266,7 +352,7 @@
       <img
         src="./assets/images/flow-bottom.png"
         alt="flow-bottom"
-        class="w-100" />
+        class="w-100 m-0 p-0" />
     </div>
     <!-- Orthopedic condition focus area -->
     <div class="py-4" style="background-color: #f2f3f5ff">
@@ -370,27 +456,45 @@
     </div>
     <!-- OUR ORTHOPEDIC DOCTOR -->
     <div
-      class="doc_img row d-flex justify-content-evenly py-5"
+      class="doc_img row d-flex justify-content-evenly py-5 m-0 flex-nowrap w-100"
       style="overflow-x: scroll">
-      <div class="card w-25">
-        <img src="./assets/images/doctor1.jfif" alt="doc1" />
-        <div class="card-body">
-          <h6 style="color: #002b58">Dr. Wiley Waites</h6>
-          <p>Orthopedic Surgeon</p>
+      <div class="p-3 col-12 col-md-5 col-lg-3 m-0">
+        <div class="card p-0">
+          <img
+            src="./assets/images/doctor1.jfif"
+            alt="doc1"
+            class="img-fluid p-0"
+            style="overflow: hidden" />
+          <div class="card-body">
+            <h6 style="color: #002b58">Dr. Wiley Waites</h6>
+            <p>Orthopedic Surgeon</p>
+          </div>
         </div>
       </div>
-      <div class="card w-25">
-        <img src="./assets/images/doctor2.jfif" alt="doc1" />
-        <div class="card-body">
-          <h6 style="color: #002b58">Dr. John Dory</h6>
-          <p>General Practitioner</p>
+      <div class="p-3 col-12 col-md-5 col-lg-3 m-0">
+        <div class="card p-0 m-0">
+          <img
+            src="./assets/images/doctor2.jfif"
+            alt="doc1"
+            class="img-fluid p-0"
+            style="overflow: hidden" />
+          <div class="card-body">
+            <h6 style="color: #002b58">Dr. John Dory</h6>
+            <p>General Practitioner</p>
+          </div>
         </div>
       </div>
-      <div class="card w-25">
-        <img src="./assets/images/doctor3.jfif" alt="doc1" />
-        <div class="card-body">
-          <h6 style="color: #002b58">Dr. Patty O'Furniture</h6>
-          <p>Rehabilitation Therapist</p>
+      <div class="p-3 col-12 col-md-5 col-lg-3 m-0">
+        <div class="card p-0 m-0">
+          <img
+            src="./assets/images/doctor3.jfif"
+            alt="doc1"
+            class="img-fluid p-0"
+            style="overflow: hidden" />
+          <div class="card-body">
+            <h6 style="color: #002b58">Dr. Patty O'Furniture</h6>
+            <p>Rehabilitation Therapist</p>
+          </div>
         </div>
       </div>
     </div>
@@ -447,8 +551,8 @@
     <div class="row w-100 m-0 my-5 p-0">
       <div class="col-12 col-lg-7 p-0 m-0 ps-5">
         <h2>DON'T DELAY YOUR TREATMENT</h2>
-        <div class="row my-3">
-          <div class="col">
+        <div class="row my-3 m-0">
+          <div class="col-12 col-md-5 ps-4 p-0">
             <h6>Risks of delayed Treatment</h6>
             <ul>
               <li>Minor Problems become Major Problems</li>
@@ -457,7 +561,7 @@
               <li>Compensatory/New Problems Develop</li>
             </ul>
           </div>
-          <div class="col-5">
+          <div class="col-12 col-md-5 ps-4 p-0 m-0 w-auto">
             <h6>Benefits of treatment</h6>
             <ul>
               <li>Return to Physical Activity</li>
@@ -466,7 +570,7 @@
               <li>Quality of Life Improves</li>
             </ul>
           </div>
-          <p>
+          <p class="p-0 m-0 w-auto">
             For Individuals with an ACL tear the chance of a meniscal tear
             increases by 2% with each week of delay !.
           </p>
@@ -527,9 +631,12 @@
     </div>
     <!-- contact us -->
     <footer class="row text-white m-0 p-0" style="background-color: #322633ff">
-      <div class="row p-0 m-0 my-5 d-flex justify-content-center">
-        <div class="col-4 mb-3">
-          <img src="./assets/images/orthopedic_contact_logo.png" alt="logo" />
+      <div class="row p-0 m-0 my-5">
+        <div class="col-12 col-lg-4 mb-3 ps-4">
+          <img
+            src="./assets/images/orthopedic_contact_logo.png"
+            alt="logo"
+            class="img-fluid" />
           <p class="my-4">
             Injures, joint replacements, and orthopedic issues are difficult to
             navigate. We have designed this site as a valuable resource for you
@@ -540,14 +647,14 @@
             >A clinekt Health Company</a
           >
         </div>
-        <div class="col-2">
+        <div class="col-12 col-md-6 col-lg-2 ps-4">
           <h5 class="text-nowrap">Quick link</h5>
           <p>Home</p>
           <p>Evaluation</p>
           <p>Education</p>
           <p>Provider</p>
         </div>
-        <div class="col-2">
+        <div class="col-12 col-md-6 col-lg-2 ps-4 text-nowrap">
           <h5>Legal</h5>
           <p>Terms and condition</p>
           <p>Cookie policy</p>
@@ -555,7 +662,7 @@
           <p>Advertising policy</p>
           <p>Review Guidlines</p>
         </div>
-        <div class="col-4 w-auto">
+        <div class="col-12 col-lg-4 w-auto ps-4 p-0">
           <h5>Contact us</h5>
           <div class="d-flex align-items-center">
             <span class="fluent--mail-48-filled"></span>
