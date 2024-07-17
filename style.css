@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .gradient-text {
   background: linear-gradient(45deg, #52af79, #3283c5);
   background-clip: text; /* Standard property */
@@ -12,7 +17,8 @@ li a {
 .body-img {
   background-image: url("./assets/images/athlete-running.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
   max-width: 100%;
   min-height: 70vh;
 }
@@ -39,6 +45,15 @@ li a {
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14'/%3E%3C/svg%3E");
 }
+.navigation_btn > button {
+  background-color: rgb(247, 247, 247);
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: 700;
+}
 
 .eva-img {
   background-image: linear-gradient(to bottom, #2676c700 0%, #002b58 80%),
@@ -46,7 +61,8 @@ li a {
   background-size: cover;
   background-position: center;
   min-height: 50vh;
-  max-width: 25%;
+  min-width: 25%;
+  max-width: 80%;
   margin: 1rem;
 }
 .edu-img {
@@ -55,7 +71,8 @@ li a {
   background-size: cover;
   background-position: center;
   min-height: 50vh;
-  max-width: 25%;
+  min-width: 25%;
+  max-width: 80%;
   margin: 1rem;
 }
 .pro-img {
@@ -64,7 +81,8 @@ li a {
   background-size: cover;
   background-position: left;
   min-height: 50vh;
-  max-width: 25%;
+  min-width: 25%;
+  max-width: 80%;
   margin: 1rem;
 }
 .solar--round-arrow-right-outline {
@@ -124,7 +142,7 @@ h4 {
   background: linear-gradient(to bottom, #044586 50%, #ffffff 50%);
 }
 .fluent--navigation-16-filled {
-  display: inline-block;
+  display: flex;
   width: 1.8rem;
   height: 1.8rem;
   background-repeat: no-repeat;
@@ -133,4 +151,44 @@ h4 {
 }
 *::-webkit-scrollbar {
   display: none;
+}
+.whyNow {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(39, 71, 110, 0.945),
+      rgba(39, 71, 110, 0.911)
+    ),
+    url("./assets/images/bone.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.iconamoon--arrow-left-2-light {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: white;
+  border-radius: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%230473b9' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.4' d='m14 7l-5 5l5 5'/%3E%3C/svg%3E");
+}
+.iconamoon--arrow-right-2-light {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 20px;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%230473b9' stroke-linecap='round' stroke-linejoin='round' stroke-width='1' d='m10 17l5-5l-5-5'/%3E%3C/svg%3E");
+}
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1 !important;
+}
+@media screen and (max-width: 600px) {
+  .Knee_img > img {
+    width: 100%;
+  }
 }

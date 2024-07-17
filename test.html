@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orthopedic Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --background: #ffffff;
+        --foreground: #000000;
+        --primary: #1d4ed8;
+        --border: #e5e7eb;
+        --input: #f3f4f6;
+        --ring: #2563eb;
+        --primary-foreground: #ffffff;
+        --secondary: #6b7280;
+        --secondary-foreground: #ffffff;
+        --accent: #f59e0b;
+        --accent-foreground: #ffffff;
+        --destructive: #ef4444;
+        --destructive-foreground: #ffffff;
+        --muted: #9ca3af;
+        --muted-foreground: #ffffff;
+        --card: #ffffff;
+        --card-foreground: #000000;
+        --popover: #ffffff;
+        --popover-foreground: #000000;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: #1f2937;
+          --foreground: #f9fafb;
+          --primary: #3b82f6;
+          --border: #374151;
+          --input: #4b5563;
+          --ring: #60a5fa;
+          --primary-foreground: #f9fafb;
+          --secondary: #9ca3af;
+          --secondary-foreground: #1f2937;
+          --accent: #fbbf24;
+          --accent-foreground: #1f2937;
+          --destructive: #f87171;
+          --destructive-foreground: #1f2937;
+          --muted: #6b7280;
+          --muted-foreground: #1f2937;
+          --card: #374151;
+          --card-foreground: #f9fafb;
+          --popover: #4b5563;
+          --popover-foreground: #f9fafb;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-background text-foreground">
+    <nav class="bg-card border-b border-border">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <a href="#" class="flex items-center">
+          <img src="https://placehold.co/150x50?text=LOGO" alt="My Orthopedic Problem Logo" class="h-10" />
+        </a>
+        <div class="hidden md:flex space-x-4">
+          <a href="#" class="text-secondary hover:text-primary">Home</a>
+          <a href="#" class="text-secondary hover:text-primary">About</a>
+          <a href="#" class="text-secondary hover:text-primary">Evaluation</a>
+          <a href="#" class="text-secondary hover:text-primary">Providers</a>
+          <a href="#" class="text-secondary hover:text-primary">Exercises</a>
+          <a href="#" class="text-secondary hover:text-primary">More</a>
+          <a href="#" class="text-secondary hover:text-primary">Login</a>
+          <a href="#" class="bg-accent text-accent-foreground px-4 py-2 rounded hover:bg-accent/80">Signup</a>
+        </div>
+        <button class="md:hidden flex items-center">
+          <img aria-hidden="true" alt="menu" src="https://openui.fly.dev/openui/24x24.svg?text=☰" />
+        </button>
+      </div>
+    </nav>
+    <div class="relative hero-section">
+      <img src="./assets/images/athlete-running.jpg" alt="Running on a bridge" class="w-full h-auto" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white p-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Simplifying <span class="text-primary">YOUR</span> Orthopedic Care <br />
+          EVALUATE, EDUCATE & ENGAGE
+        </h1>
+        <h2 class="text-2xl md:text-3xl mb-2">EVALUATE NOW</h2>
+        <p class="mb-4">CLICK ICON BELOW TO BEGIN YOUR EVALUATION</p>
+        <div class="flex flex-wrap justify-center gap-2 mb-4">
+          <button class="bg-primary text-primary-foreground px-4 py-2 rounded hover:bg-primary/80">Hip</button>
+          <button class="bg-primary text-primary-foreground px-4 py-2 rounded hover:bg-primary/80">Knee</button>
+          <button class="bg-primary text-primary-foreground px-4 py-2 rounded hover:bg-primary/80">Shoulder</button>
+          <button class="bg-primary text-primary-foreground px-4 py-2 rounded hover:bg-primary/80">Hand & Wrist</button>
+          <button class="bg-primary text-primary-foreground px-4 py-2 rounded hover:bg-primary/80">Foot & Ankle</button>
+          <button class="bg-primary text-primary-foreground px-4 py-2 rounded hover:bg-primary/80">Spine</button>
+        </div>
+        <div class="w-full max-w-md">
+          <input type="text" class="w-full p-2 rounded border border-border bg-input text-foreground" placeholder="Search your orthopedic condition to learn more" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
